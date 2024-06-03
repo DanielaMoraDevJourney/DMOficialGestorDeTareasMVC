@@ -1,0 +1,51 @@
+﻿@model DMOficialGestorDeTareasMVC.Models.DMTarea
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>DMTarea</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DMTitulo" class="control-label"></label>
+                <input asp-for="DMTitulo" class="form-control" />
+                <span asp-validation-for="DMTitulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DMDescripcion" class="control-label"></label>
+                <input asp-for="DMDescripcion" class="form-control" />
+                <span asp-validation-for="DMDescripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DMFechaVencimiento" class="control-label"></label>
+                <input asp-for="DMFechaVencimiento" class="form-control" />
+                <span asp-validation-for="DMFechaVencimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DMPrioridadID" class="control-label"></label>
+                <select asp-for="DMPrioridadID" class ="form-control" asp-items="ViewBag.DMPrioridadID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DMCategoriaID" class="control-label"></label>
+                <select asp-for="DMCategoriaID" class ="form-control" asp-items="ViewBag.DMCategoriaID"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
