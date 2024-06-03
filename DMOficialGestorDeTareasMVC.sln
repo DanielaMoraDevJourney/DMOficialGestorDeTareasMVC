@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMOficialGestorDeTareasMVC", "DMOficialGestorDeTareasMVC\DMOficialGestorDeTareasMVC.csproj", "{AA741DDB-2082-4F04-96BB-038147308E4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMAPIGestorDeTareasMagicOficial", "DMAPIGestorDeTareasMagicOficial\DMAPIGestorDeTareasMagicOficial.csproj", "{938A9428-1684-4745-8CC9-7973C5C90DDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AA741DDB-2082-4F04-96BB-038147308E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA741DDB-2082-4F04-96BB-038147308E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA741DDB-2082-4F04-96BB-038147308E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938A9428-1684-4745-8CC9-7973C5C90DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938A9428-1684-4745-8CC9-7973C5C90DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938A9428-1684-4745-8CC9-7973C5C90DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938A9428-1684-4745-8CC9-7973C5C90DDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
