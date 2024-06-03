@@ -15,5 +15,7 @@ namespace DMAPIGestorDeTareasMagicOficial.Data
         }
 
         public DbSet<DMAPIGestorDeTareasMagicOficial.Data.Models.DMTarea> DMTarea { get; set; } = default!;
+        public DbSet<DMAPIGestorDeTareasMagicOficial.Data.Models.DMCategoria> DMCategoria { get; set; } = default!;
+        public DbSet<DMAPIGestorDeTareasMagicOficial.Data.Models.DMPrioridad> DMPrioridad { get; set; } = default!;
     }
 }

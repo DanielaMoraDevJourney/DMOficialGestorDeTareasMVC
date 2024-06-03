@@ -30,4 +30,8 @@ app.MapControllers();
 
 app.MapDMTareaEndpoints();
 
+app.MapDMCategoriaEndpoints();
+
+app.MapDMPrioridadEndpoints();
+
 app.Run();
