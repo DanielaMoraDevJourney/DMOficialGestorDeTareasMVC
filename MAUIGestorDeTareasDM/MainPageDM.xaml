@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUIGestorDeTareasDM.MainPageDM"
              Title="MainPageDM">
-    
-    <StackLayout>
-        <Label Text="Gestor de Tareas"
+    <Grid>
+        <StackLayout>
+            <Label Text="Gestor de Tareas"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        <Button Text="Leer Tareas"
+            <Button Text="Leer Tareas"
             Clicked="Button_Clicked_DM"
             HorizontalOptions="Center" />
-        <ListView x:Name="listView">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell x:DataType="{Binding DMTitulo}"></TextCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
-    
-    
+            <ListView x:Name="listView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell x:DataType="{Binding DMTitulo}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Grid>
+
 </ContentPage>
